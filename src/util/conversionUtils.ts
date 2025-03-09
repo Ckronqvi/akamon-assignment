@@ -1,4 +1,4 @@
-import Fraction from 'fraction.js';
+import Fraction from "fraction.js";
 
 /**
  * Converts electricity price from EUR per megawatt-hour (MWh) to cents per kilowatt-hour (kWh).
@@ -10,18 +10,20 @@ export const convertToSntPerKWh = (priceInEurPerMWh: number): Fraction => {
   // 1 EUR/MWh = 0.1 snt/kWh
   return new Fraction(priceInEurPerMWh).div(10);
 };
-  
-  /**
-   * Adds VAT to the given electricity price.
-   *
-   * @param priceInSntPerKWh - The price of electricity in cents per kilowatt-hour.
-   * @param vatRate - The VAT rate to apply. Current: 1.255 (25.5%).
-   * @returns The price including VAT.
-   */
-  export const addElectricityVAT = (priceInSntPerKWh: Fraction, vatRate: number = 1.255): Fraction => {
-    return priceInSntPerKWh.mul(vatRate);
-  };
-  
+
+/**
+ * Adds VAT to the given electricity price.
+ *
+ * @param priceInSntPerKWh - The price of electricity in cents per kilowatt-hour.
+ * @param vatRate - The VAT rate to apply. Current: 1.255 (25.5%).
+ * @returns The price including VAT.
+ */
+export const addElectricityVAT = (
+  priceInSntPerKWh: Fraction,
+  vatRate = 1.255,
+): Fraction => {
+  return priceInSntPerKWh.mul(vatRate);
+};
 
 /**
  * Processes the electricity price by converting it to cents per kilowatt-hour

@@ -4,8 +4,8 @@ Tämä repository sisältää React-sovelluksen, joka näyttää sähkön spot-h
 
 ## Vaatimukset
 
-- **Teknologiat**: 🛠️ React + TypeScript + TailwindCSS  
-- **Datan lähde**: 📂 JSON-tiedosto, haettu käyttämällä fetch API:a.  
-- **Yksikön muunnos**: 💱 EUR/MWh → snt/kWh  
-- **Arvonlisävero**:  Hintoihin lisätty sähkön arvonlisävero.  
-- **Responsiivisuus**: 📱💻 Sovellus toimii sekä mobiili- että työpöytälaitteilla.  
+- **Teknologiat**: 🛠️ React + TypeScript + TailwindCSS
+- **Datan lähde**: 📂 JSON-tiedosto, haettu käyttämällä fetch API:a.
+- **Yksikön muunnos**: 💱 EUR/MWh → snt/kWh
+- **Arvonlisävero**: Hintoihin lisätty sähkön arvonlisävero.
+- **Responsiivisuus**: 📱💻 Sovellus toimii sekä mobiili- että työpöytälaitteilla.
