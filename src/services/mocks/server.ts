@@ -1,3 +1,4 @@
+// This is for tests only
 import { setupServer } from "msw/node";
 import { handlers } from "./handlers";
 

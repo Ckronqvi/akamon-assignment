@@ -1,3 +1,4 @@
+// This is for tests only
 import { http, HttpResponse } from "msw";
 
 export const handlers = [

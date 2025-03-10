@@ -17,3 +17,7 @@
     background-size: 14px 14px;
   }
 }
+
+body {
+  background-color: hsl(202, 100%, 70%);
+}

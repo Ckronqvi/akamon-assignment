@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 
+// adds grainy noise to the background
 const NoiseFilter = () => {
   return (
     <svg className="fixed w-0 h-0">
@@ -29,13 +30,13 @@ interface MainLayoutProps {
 
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
-    <div className="flex flex-col min-h-screen py-0 px-2">
+    <div className="flex flex-col min-h-screen py-0 overflow-hidden">
       <NoiseFilter />
       <div
-        className="fixed inset-0 -z-40 pointer-events-none opacity-20 bg-[#ffc75f]"
+        className="fixed inset-0 -z-40 pointer-events-none opacity-20 bg-[#333333]"
         style={{ filter: "url(#noiseFilter)" }}
       />
-      <main className="container flex flex-col w-screen mx-auto max-w-5xl lg:py-6 lg:px-2 flex-1 my-6 justify-top">
+      <main className="container flex flex-col w-screen mx-auto max-w-5xl lg:py-6 flex-1 my-6 justify-top px-2 lg:px-6">
         {children}
       </main>
     </div>

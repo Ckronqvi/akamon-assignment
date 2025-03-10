@@ -30,7 +30,7 @@ export const addElectricityVAT = (
  * and applying the VAT rate.
  *
  * @param priceInEurPerMWh - The electricity price in euros per megawatt-hour.
- * @returns The final price including VAT in cents per kilowatt-hour.
+ * @returns The final price including VAT in cents per kilowatt-hour (as a Fraction).
  */
 export const processPrice = (priceInEurPerMWh: number): Fraction => {
   const priceInSntPerKWh = convertToSntPerKWh(priceInEurPerMWh);
@@ -38,7 +38,7 @@ export const processPrice = (priceInEurPerMWh: number): Fraction => {
 };
 
 /**
- * Formats the price as a human-readable string with 2 decimal places.
+ * Formats the price string with 2 decimal places.
  *
  * @param price - The price as a Fraction.
  * @returns The formatted price as a string (e.g., "12.55").
