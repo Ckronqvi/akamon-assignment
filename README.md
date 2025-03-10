@@ -24,8 +24,11 @@ Seuraavaksi toteutin datan hakulogiikan. Käytin SWR:ää, joka tarjoaa valmiit 
 
 Lopuksi yhdistin kaikki osat valmiiksi sovellukseksi. Kokonaisuudessaan projekti oli mielenkiintoinen ja opettavainen kokemus. Hyödynsin työssäni paljon DeepSeek-tekoälyä tiedonhankinnassa, testitapausten luomisessa ja kommenttien (JS Docs) kirjoittamisessa. Olen ollut viime päivinä töissä päiväkodissa eikä minulla ole riittänyt jaksaminen ohjelmoida työpäivien jälkeen. Tämän vuoksi palautus menikin näin viime tinkaan. Odotan kuitenkin innolla palautetta työstäni!
 
+### Käytetyt tunnit
+7-9
+
 ### Mitä olisin halunnut lisätä/parantaa
 
-- Chartin ulkoasua ja käyttökokemusta erityisesti mobiilitilassa.
+- Kuvaajan ulkoasua ja käyttökokemusta erityisesti mobiilitilassa.
 - Parempaa virheenkäsittelyä.
 - Pieniä yksityiskohtia ja viimeistelyä eri kohdissa.
